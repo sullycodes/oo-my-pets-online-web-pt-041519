@@ -11,7 +11,11 @@ class Owner
     @name = name
     @@all << self
     @species = "human"
+<<<<<<< HEAD
     @pets = {fishes: [], dogs: [], cats: []}
+=======
+    @pets = {fishes: [], cats: [], dogs: [] }
+>>>>>>> 1954d240840f30c76103b9c2f83a673d5d37a2ca
   end  
   
   def self.all
@@ -68,10 +72,15 @@ class Owner
   end
   
   # sell (clear array?) then change each mood to nervous. do all within the each loop
+<<<<<<< HEAD
+=======
+  # @pets = {fishes: [], cats: [], dogs: [] }
+>>>>>>> 1954d240840f30c76103b9c2f83a673d5d37a2ca
   def sell_pets
     @pets.each do |k,v|
         v.each do |e|
           e.mood = "nervous"
+<<<<<<< HEAD
         end 
          v.clear
     end
@@ -96,6 +105,17 @@ class Owner
     pets_list.last.prepend("and ")<<(".")
     pets_list.join(", ").prepend("I have ") 
       
+=======
+          v.clear
+        end 
+      end
+  end
+  
+  def list_pets
+    @pets.each do |k,v|
+        
+      end
+>>>>>>> 1954d240840f30c76103b9c2f83a673d5d37a2ca
   end
   
   
